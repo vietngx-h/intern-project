@@ -15,8 +15,9 @@ app.get('/', (req, res)=>{
 
 //MongoDB configuration
 
-const uri = `mongodb+srv://vietnguyenvn050604:<viet.nguyen.hoang@2k4>@cluster0.laa3sxz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+// const uri = `mongodb+srv://vietnguyenvn050604:<viet.nguyen.hoang@2k4>@cluster0.laa3sxz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
+// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+
 
 function verifyJWT(req, res, next){
     const authHeader = req.headers.authorization;
@@ -124,3 +125,14 @@ run().catch(error=>console.error(error))
 app.listen(PORT, (req, res)=>{
     console.log('Food Monster is running at port', PORT);
 })
+var express = require('express');
+var router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+    res.send('le dac khoan 3');
+});
+
+module.exports = router;
+
+

@@ -1,0 +1,109 @@
+[
+    {
+        "_id": "636bb8edb8a446f34507763d",
+        "category_id": "06",
+        "rating": {
+            "number": 5,
+            "badge": "Good"
+        },
+        "title": "Buster's Cheesesteak",
+        "location": "366 Columbus Ave San Francisco, CA 94133 Vallejo St & Grant Ave North Beach/Telegraph Hill, Russian Hill",
+        "service_hours": {
+            "Monday": "Mon 11:00 AM - 3:00 AM (Next day)",
+            "Tuesday": "Tue 11:00 AM - 3:00 AM (Next day)",
+            "Wednesday": "11:00 AM - 3:00 AM (Next day)",
+            "Thursday": "Thu 11:00 AM - 3:00 AM (Next day)",
+            "Friday": "Fri 11:00 AM - 3:00 AM (Next day)",
+            "Saturday": "Sat 11:00 AM - 3:00 AM (Next day)",
+            "Sunday": "Sun 11:00 AM - 3:00 AM (Next day)"
+        },
+        "amenities": {
+            "delivery": "Offers Delivery",
+            "takeout": "Offers Takeout"
+        },
+        "website": "http://orderbusterscheesesteak.com/",
+        "phone": "(415) 392-2800",
+        "author": {
+            "name": "Michael L.",
+            "title": "Business owner",
+            "img": "https://i.ibb.co/DDKS9M4/bluebird-provisions-l-RAWc-T7uwh-Y-unsplash.jpg"
+        },
+        "thumbnail_url": "https://images.deliveryhero.io/image/fd-bd/LH/vrcu-hero.jpg",
+        "image_url": "https://images.deliveryhero.io/image/fd-bd/LH/vrcu-hero.jpg",
+        "details": {
+            "specialties": "Salads like the grilled chicken Caesar salad, sandwiches like their famous Philly Steak Sandwich that you can choose the option of having it made with steak or chicken and your choice of cheese. They even offer vegetarian sandwiches like the Blondie Sandwich - a sandwich layered with Tofu, spinach, bell peppers, onion, zucchini, and guacamole. Then there is the pasta like the Cheese Ravioli and Fettuccine Alfredo and more! You can get House Special Pizzas like the Mission Bell (Mexican) Pizza - a pizza topped with ground beef, onions, fresh tomatoes, black olives, and jalapenos or the Valencia Special Pizza - loaded with artichoke hearts, sun-dried tomatoes, garlic, black olives, and zucchini or you can create your very own fantasy pizza."
+        }
+    },
+    {
+        "_id": "636bb8edb8a446f34507763a",
+        "category_id": "03",
+        "rating": {
+            "number": 5,
+            "badge": "Good"
+        },
+        "title": "Dumpling Baby China Bistro",
+        "location": "3751 Geary Blvd San Francisco, CA 94118 2nd Ave & Arguello Blvd Inner Richmond",
+        "service_hours": {
+            "Monday": "Mon 04:00 PM - 10:00 PM",
+            "Tuesday": "Tue 04:00 PM - 10:00 PM",
+            "Wednesday": "Wed 04:00 PM - 10:00 PM",
+            "Thursday": "Thu 04:00 PM - 10:00 PM",
+            "Friday": "Fri 04:00 PM - 10:00 PM",
+            "Saturday": "Sat 04:00 PM - 10:00 PM",
+            "Sunday": "Sun 04:00 PM - 10:00 PM"
+        },
+        "amenities": {
+            "delivery": "Offers Delivery",
+            "takeout": "Offers Takeout"
+        },
+        "website": "https://dumplingbabysf.com",
+        "phone": "(415) 592-8232",
+        "author": {
+            "name": "Brandon W.",
+            "title": "Business owner",
+            "img": "https://i.ibb.co/F8VzW6g/joseph-gonzalez-i-Fg-Rcq-Hznqg-unsplash.jpg"
+        },
+        "thumbnail_url": "https://images.deliveryhero.io/image/fd-th/LH/ii8k-hero.jpg",
+        "image_url": "https://images.deliveryhero.io/image/fd-th/LH/ii8k-hero.jpg",
+        "details": {
+            "specialties": "Family owned and operated contemporary Chinese-American eatery featuring signature wok'd classics and popular dumplings."
+        }
+    },
+    {
+        "_id": "636bb8edb8a446f345077639",
+        "category_id": "02",
+        "rating": {
+            "number": 4.5,
+            "badge": "Better"
+        },
+        "title": "Farmhouse Kitchen Thai Cuisine",
+        "location": "710 Florida St San Francisco, CA 94110 19th St & 20th St Mission",
+        "service_hours": {
+            "Monday": "Mon 11:00 AM - 10:00 PM",
+            "Tuesday": "Tue 11:00 AM - 10:00 PM",
+            "Wednesday": "Wed 11:00 AM - 10:00 PM",
+            "Thursday": "Thu 11:00 AM - 10:00 PM",
+            "Friday": "Fri 11:00 AM - 10:00 PM",
+            "Saturday": "Sat 12:00 PM - 10:00 PM",
+            "Sunday": "Sun 12:00 PM - 10:00 PM"
+        },
+        "amenities": {
+            "delivery": "Offers Delivery",
+            "takeout": "Offers Takeout",
+            "reservations": "Take Reservations"
+        },
+        "website": "https://www.farmhousethai.com",
+        "phone": "(415) 814-2920",
+        "author": {
+            "name": "Sean G.",
+            "title": "Business owner",
+            "img": "https://i.ibb.co/RCc7fCW/mohamed-nohassi-Ddgl-Eo-IC2y4-unsplash.jpg"
+        },
+        "thumbnail_url": "https://images.deliveryhero.io/image/fd-my/LH/zvhj-hero.jpg",
+        "image_url": "https://images.deliveryhero.io/image/fd-my/LH/zvhj-hero.jpg",
+        "details": {
+            "specialties": "Not your typical Thai! We are a Thai New Generation restaurant focusing on bringing you adventurous, bold flavors of traditional and non-traditional dishes using the freshest ingredients. Look out for our nightly specials from regional home cooked dishes to market fried grasshoppers. We are consistently voted the 'Best Thai Restaurant' in San Francisco by Michelin Bib Gourmand 2016 - 2019",
+            "history": "Established in 2015. We think SF is ready for a fun, dynamic Thai food from regional cooking dishes to our grandma's recipes. Currently, we are offering many Northern Thai dishes from Chiangmai, Chiang Rai, and Loei. Chef/owner, 'POP', is originally from Loei but spent most of his adulthood in Bangkok. Pop attributes his passion for food to his daily trips to the local market with his grandma. In which, a dish called 'Panang Nuea' 24hrs braised Short ribs in panang spices and coconut milk reminiscent of his childhood where he cooked a large meal for his entire family. Farmhouse Kitchen has been certified as a Thai Select restaurant, honoring its cooking which utilizes authentic Thai ingredients."
+        }
+    }
+]
