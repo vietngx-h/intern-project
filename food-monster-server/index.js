@@ -1,5 +1,6 @@
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const express = require('express');
+// const path = require('path')
 const app = express();
 require('dotenv').config()
 const PORT = process.env.PORT || 3001;
@@ -7,7 +8,19 @@ const cors = require('cors');
 const jwt = require('jsonwebtoken');
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin:"http://localhost:3000",
+    optionsSuccessStatus: 200
+}))
+
+app.use(function (req, res, next){
+    res.set({
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE',
+        'Access-Control-Allow-Headers': 'Content-Type'
+    })
+    next();
+});
 
 app.get('/', (req, res)=>{
     res.send('Food Monster Server is Running');
@@ -122,10 +135,6 @@ async function run(){
 run().catch(error=>console.error(error))
 
 
-app.listen(PORT, (req, res)=>{
-    console.log('Food Monster is running at port', PORT);
-})
-var express = require('express');
 var router = express.Router();
 
 /* GET home page. */

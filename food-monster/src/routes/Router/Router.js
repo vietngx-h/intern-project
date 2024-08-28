@@ -12,6 +12,8 @@ import NotFoundPage from "../../components/Shared/NotFoundPage/NotFoundPage";
 import Main from "../../layout/Main";
 import User from "../../layout/User";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import Products from "../../components/Pages/Products/Products";
+import Product from "../../components/Pages/Products/Product/Product";
 
 const Router = createBrowserRouter([
     {
@@ -32,6 +34,14 @@ const Router = createBrowserRouter([
                 path: '/services/:_id',
                 loader: async({params})=>fetch(`https://food-monster-server.vercel.app/services/${params._id}`),
                 element: <ServiceSingle></ServiceSingle>
+            },
+            {
+                path: '/products',
+                element: <Products></Products>
+            },
+            {   path: '/product/:id',
+                loader: async({params})=>fetch(`https://food-monster-server.vercel.app/products.details/${params._id}`),
+                element: <Product></Product>
             },
             {
                 path: '/blog',

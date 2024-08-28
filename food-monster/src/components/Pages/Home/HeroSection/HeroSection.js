@@ -11,7 +11,10 @@ const HeroSection = () => {
                 <div className="max-w-lg">
                     <h1 className="mb-5 text-5xl font-bold">Food delivery from our best restaurants</h1>
                     <p className="mb-5">The meals you love, delivered with care</p>
+                    <div className="flex space-x-4">
                     <Link to="/signup" className="btn">Get Started</Link>
+                    <Link to="/products" className='btn'>Products</Link>
+                    </div>
                 </div>
             </div>
         </div>
