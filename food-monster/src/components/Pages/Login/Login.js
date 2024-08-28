@@ -8,25 +8,25 @@ import toast, { Toaster } from 'react-hot-toast';
 
 
 const Login = () => {
-    
+
     const {loginUser, googleSignIn, setLoading} = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
     const from = location.state?.from?.pathname || "/";
     const [error, setError] = useState('');
-    
+
     const handleSubmit = event => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
         const password = form.password.value;
-        
+
         loginUser(email, password)
         .then(result=> {
             const user = result.user;
             setLoading(false);
             form.reset();
-            setError('') 
+            setError('')
             setAuthToken(user);
             toast.success('Login Successful')
             navigate(from, {replace: true});
@@ -37,11 +37,16 @@ const Login = () => {
     const socialSignIn = () => {
         googleSignIn()
         .then(result=> {
+            console.log("result",result)
             const user = result.user;
             setAuthToken(user);
-            navigate(from, {replace: true});
         })
-        .catch(error=> setError(error))
+        .catch(error=> {
+            console.log("error",error)
+            setError(error)
+
+
+        })
     }
 
 
@@ -72,20 +77,18 @@ const Login = () => {
                         </div>
                     </form>
                     <label className="label">
-                        <Link className="label-text-alt link link-hover color-red Error">{error}</Link>
+                        <button className="label-text-alt link link-hover color-red Error">{error}</button>
                     </label>
                     <div className='flex justify-center mb-5'>
-                        <Link onClick={socialSignIn} className='social-login  ml-3 flex items-center'>
-                        <FcGoogle className='mr-3'/>
+                        <button onClick={socialSignIn} className='social-login  ml-3 flex items-center'>
                         Continue with Google
-                        <Toaster/>
-                        </Link>
+                        </button>
                     </div>
                     <div className='mx-auto mb-5'>
                         <p>New to the Food Monster? <Link to="/signup" className='color-red'>Sign Up here</Link></p>
                     </div>
                 </div>
-            </div>           
+            </div>
         </div>
     );
 };

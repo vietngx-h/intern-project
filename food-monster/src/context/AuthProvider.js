@@ -7,10 +7,12 @@ export const AuthContext = createContext();
 const googleProvider = new GoogleAuthProvider();
 const auth = getAuth(app);
 
+console.log("auth",auth)
+
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
-    
+
     const signupUser = (email, password) => {
         setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
@@ -41,11 +43,11 @@ const AuthProvider = ({children}) => {
             unsubscribe();
         }
     },[])
-    
-    
-    
-    
-    
+
+
+
+
+
     const authInfo = {
         user,
         signupUser,
